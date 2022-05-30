@@ -1,24 +1,27 @@
-import Vue from 'https://unpkg.com/vue@2.6.10/dist/vue.esm.browser.min.js';
-import VueRouter from 'https://unpkg.com/vue-router@3.1.3/dist/vue-router.esm.browser.min.js';
-import Vuex from 'https://unpkg.com/vuex@3.1.1/dist/vuex.esm.browser.min.js';
+import Vue from '/js/vue.esm.browser.min.js';
+import VueRouter from '/js/vue-router.esm.browser.min.js';
+import Vuex from '/js/vuex.esm.browser.min.js';
 
 Vue.use(VueRouter);
-let routes = [];
+import routes from "./routes/route.js";
 const router = new VueRouter({
   mode: 'history',
-  routes,
+  routes
 });
 
 Vue.use(Vuex);
+import user from "./stores/user.js";
 const store = new Vuex.Store({
   namespaced: true,
   state: {},
   mutations: {},
   actions: {},
   getters: {},
+  modules: {
+    user
+  }
 });
-
-import App from './App.mjs';
+import App from './App.js';
 window.vm = new Vue({
   store,
   router,
