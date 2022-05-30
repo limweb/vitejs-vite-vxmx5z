@@ -39,6 +39,18 @@
     <script src="js/liff2sdk.js"></script>
     <script src="js/vconsole.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    <script src="js/tigy.js"></script>
+    <script>
+      window.__unocss = {
+        rules: [],
+        presets: [preseTagify({})],
+      };
+    </script>
+    <script>
+      // var vConsole = new VConsole()
+      const liffid = "<?=$_ENV['LIFFID']?>";
+    </script>
+
     <script>
       var vConsole = new VConsole();
       const liffid = '123456798';
@@ -51,6 +63,7 @@
         <div class="spinner-border text-primary" role="status"></div>
       </div>
       <App />
+      <text-red>Text Red</text-red>
     </div>
     <!-- ============== Js Files ==============  -->
     <!-- Bootstrap -->
