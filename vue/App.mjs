@@ -1,6 +1,6 @@
 export default {
   template: `
-    <div><h1>TEST</h1></div>
+    <div><h1>TEST{{name}}</h1></div>
   `,
   mixins: [],
   data() {
