@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
+.parcel-cache
 node_modules
 dist
 dist-ssr
@@ -19,6 +19,6 @@ dist-ssr
 .DS_Store
 *.suo
 *.ntvs*
-*.njsproj
+*.njsprojc
 *.sln
 *.sw?

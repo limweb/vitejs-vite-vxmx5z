@@ -1,6 +1,9 @@
 export default {
   template: `
-    <div><router-view></router-view></div>
+    <div>
+      <div class="text-red">AAAAAAa</div>
+      <router-view></router-view>
+    </div>
   `,
   mixins: [],
   data() {
