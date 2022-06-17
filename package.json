@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "parcel build ./vue/main.js  --dist-dir ./dist",
     "preview": "vite preview"
   },
